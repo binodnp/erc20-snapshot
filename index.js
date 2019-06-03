@@ -7,7 +7,7 @@ const Events = require("./events/blockchain");
 const Export = require("./export");
 
 const start = async () => {
-  await await Config.checkConfig();
+  await Config.checkConfig();
   const format = Config.getConfig().format;
   const result = await Events.get();
 
