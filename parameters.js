@@ -5,7 +5,7 @@ const abi = require("./abi");
 
 const parameters = {
   abi: abi.getABI(),
-  configFileName: path.join(__dirname, "snapshot.config.json"),
+  configFileName: path.join(process.cwd(), "snapshot.config.json"),
   configQuestions: [
     {
       type: "input",
@@ -55,11 +55,11 @@ const parameters = {
       default: "yes"
     }
   ],
-  knownTypes: path.join(__dirname, "/.cache/known-types.json"),
-  outputFileNameCSV: path.join(__dirname, "./balances/{token}.csv"),
-  outputFileNameJSON: path.join(__dirname, "./balances/{token}.json"),
-  eventsDownloadFolder: path.join(__dirname, "./tx/{token}/"),
-  eventsDownloadFilePath: path.join(__dirname, "./tx/{token}/{blockNumber}.json")
+  knownTypes: path.join(process.cwd(), "/.cache/known-types.json"),
+  outputFileNameCSV: path.join(process.cwd(), "./balances/{token}.csv"),
+  outputFileNameJSON: path.join(process.cwd(), "./balances/{token}.json"),
+  eventsDownloadFolder: path.join(process.cwd(), "./tx/{token}/"),
+  eventsDownloadFilePath: path.join(process.cwd(), "./tx/{token}/{blockNumber}.json")
 };
 
 module.exports.get = () => {
