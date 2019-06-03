@@ -77,8 +77,8 @@ Checks each address to determine whether it is a smart contract or an Ethereum w
 
 ## You May Also Like
 
-- [Vyper ERC20 Contracts](https://github.com/binodnp/)
-- [Vyper Crowdsale Contracts](https://github.com/binodnp/)
-- [Solidoc: Solidity Documentation Generator](https://github.com)
-- [SolFlattener: Solidity Flattener](https://github.com)
-- [Vesting Schedule](https://github.com)
+- [Vyper ERC20 Contracts](https://github.com/binodnp/vyper-erc20)
+- [Vyper Crowdsale Contracts](https://github.com/binodnp/vyper-crowdsale)
+- [Solidoc: Solidity Documentation Generator](https://github.com/CYBRToken/solidoc)
+- [SolFlattener: Solidity Flattener](https://github.com/CYBRToken/sol-flattener)
+- [Vesting Schedule](https://github.com/binodnp/vesting-schedule)
