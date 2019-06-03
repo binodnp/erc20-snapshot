@@ -1,0 +1,32 @@
+{
+  "name": "erc20-snapshot",
+  "version": "1.0.0",
+  "description": "ERC20 Token Snapshot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "erc20-snapshot": "index.js"
+  },
+  "keywords": [
+    "ethereum",
+    "erc20",
+    "token",
+    "snapshot"
+  ],
+  "author": "Binod Nirvan",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/binodnp/erc20-snapshot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binodnp/erc20-snapshot"
+  },
+  "dependencies": {
+    "csv-writer": "^1.3.0",
+    "inquirer": "^6.3.1",
+    "linq": "^3.2.0",
+    "web3": "^1.0.0-beta.55",
+    "bignumber.js": "^7.2.1"
+  }
+}
