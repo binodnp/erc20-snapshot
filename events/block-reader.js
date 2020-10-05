@@ -23,7 +23,10 @@ const getMinimal = pastEvents => {
 
 module.exports.getEvents = async symbol => {
   const directory = Parameters.eventsDownloadFolder.replace(/{token}/g, symbol);
-  const files = await readdirAsync(directory);
+  var files = await readdirAsync(directory);
+  files.sort((a,b) => {
+    return parseInt(a.split(".")[0]) - parseInt(b.split(".")[0]);
+  });
   let events = [];
 
   console.log("Parsing files.");
