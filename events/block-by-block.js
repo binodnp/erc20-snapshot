@@ -11,6 +11,7 @@ const range = (start, end) => {
 
 module.exports.tryBlockByBlock = async (contract, start, end, symbol) => {
   const blocks = range(start, end);
+  console.log('blocks: ', blocks)
 
   let counter = 0;
   for await (const i of blocks) {
